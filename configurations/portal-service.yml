@@ -1,0 +1,21 @@
+server:
+  port: ${SERVER.PORT}
+spring:
+  application:
+    name: portal-service
+swagger:
+  name: KZY
+  email: 1234@qq.com
+  license: apach 2.0
+  license-url: www.whsxt.com
+  title: portal-service
+  url: KZYCodePush
+  version: 1.0
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA.HOST}
+  instance:
+    hostname: 118.24.182.77 
+    instance-id: ${eureka.instance.hostname}:${server.port}
+    
